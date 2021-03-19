@@ -1,19 +1,12 @@
+const sensorData = require('./../controllers/sensorData');
+
 const express = require('express');
-const path = require('path');
 const router = express.Router();
 
-router.get('/',(req,res,next) => {
-    res.send("hello");
-});
+router.get('/device', sensorData.getData);
 
-router.post('/product',(req,res,next)=>{
-    console.log(req.body);
-    res.redirect('/');
-});
+router.post('/device',sensorData.postData);
 
-router.put('/product',(req,res,next)=>{
-    console.log(req.body);
-    res.redirect('/');
-});
+router.put('/device',sensorData.putData);
 
 module.exports = router;

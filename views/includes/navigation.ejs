@@ -1,0 +1,31 @@
+<div class="backdrop"></div>
+<header class="main-header">
+    <button id="side-menu-toggle">Menu</button>
+    <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+            <li class="main-header__item">
+                <a class="<%= path === '/webclient/' ? 'active' : '' %>" href="/webclient/">IOT DEVICES</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/webclient/graph' ? 'active' : '' %>" href="/webclient/graph">GRAPH</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/webclient/details' ? 'active' : '' %>" href="/webclient/">DETAILS</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<nav class="mobile-nav">
+        <ul class="mobile-nav__item-list">
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/webclient/' ? 'active' : '' %>" href="/webclient/">IOT DEVICE</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/webclient/graph' ? 'active' : '' %>" href="/webclient/graph">GRAPH</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/webclient/details' ? 'active' : '' %>" href="/webclient/">DATA</a>
+                </li>
+        </ul>
+</nav>
